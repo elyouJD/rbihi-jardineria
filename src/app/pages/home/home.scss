@@ -380,3 +380,60 @@ button:hover{
     opacity:.8;
 
 }
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    cursor:pointer;
+    color:white;
+}
+@media (max-width:768px){
+
+    .navbar{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:wrap;
+        padding:15px;
+    }
+
+    .menu-toggle{
+        display:block;
+        font-size:35px;
+        color:white;
+        cursor:pointer;
+    }
+
+    nav{
+
+        display:none;
+
+        width:100%;
+
+        flex-direction:column;
+
+        text-align:center;
+
+        margin-top:20px;
+
+    }
+
+    nav.active{
+
+        display:flex;
+
+    }
+
+    nav a{
+
+        padding:15px 0;
+
+    }
+
+    .btn{
+
+        margin:15px auto;
+
+    }
+
+}
+

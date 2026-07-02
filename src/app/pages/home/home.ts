@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, NgClass],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
 export class Home {
-
+ menuOpen = false;
   nombre = '';
   telefono = '';
   email = '';

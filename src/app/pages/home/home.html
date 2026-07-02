@@ -1,18 +1,33 @@
 <header class="navbar">
-  <div class="logo">
-    🌿 Rbihi Jardinería
-  </div>
 
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#galeria">Galería</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+    <div class="logo">
+        🌿 Rbihi Jardinería
+    </div>
 
-  <a class="btn" href="https://wa.me/34641470876" target="_blank">
-    WhatsApp
-  </a>
+    <div class="menu-toggle" (click)="menuOpen = !menuOpen">
+        ☰
+    </div>
+
+    <nav [class.active]="menuOpen">
+
+        <a href="#inicio" (click)="menuOpen=false">Inicio</a>
+
+        <a href="#servicios" (click)="menuOpen=false">Servicios</a>
+
+        <a href="#galeria" (click)="menuOpen=false">Galería</a>
+
+        <a href="#contacto" (click)="menuOpen=false">Contacto</a>
+
+        <a class="btn"
+           href="https://wa.me/34641470876"
+           target="_blank">
+
+            WhatsApp
+
+        </a>
+
+    </nav>
+
 </header>
 
 <section id="inicio" class="hero">
