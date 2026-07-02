@@ -1,0 +1,244 @@
+<header class="navbar">
+  <div class="logo">
+    🌿 Rbihi Jardinería
+  </div>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <a class="btn" href="https://wa.me/34641470876" target="_blank">
+    WhatsApp
+  </a>
+</header>
+
+<section id="inicio" class="hero">
+  <div class="overlay">
+    <h1>Expertos en Jardinería</h1>
+
+    <p>
+      Diseño, mantenimiento, poda, césped y sistemas de riego en Palencia.
+    </p>
+
+    <a href="https://wa.me/34641470876" target="_blank">
+      Solicitar Presupuesto
+    </a>
+  </div>
+</section>
+<section id="servicios" class="services">
+
+    <h2>Nuestros Servicios</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🌳 Mantenimiento</h3>
+            <p>Cuidado completo de jardines durante todo el año.</p>
+        </div>
+
+        <div class="card">
+            <h3>✂️ Poda</h3>
+            <p>Poda profesional de árboles, setos y arbustos.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌱 Césped</h3>
+            <p>Instalación de césped natural y artificial.</p>
+        </div>
+
+        <div class="card">
+            <h3>💧 Riego</h3>
+            <p>Montaje y reparación de sistemas de riego.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌺 Diseño</h3>
+            <p>Diseño moderno y decoración de jardines.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧹 Limpieza</h3>
+            <p>Limpieza de parcelas y mantenimiento general.</p>
+        </div>
+
+    </div>
+
+</section>
+<section id="galeria" class="gallery">
+
+    <h2>Galería de Trabajos</h2>
+
+    <div class="gallery-grid">
+
+        <img src="/images/image7.jpg" alt="Jardín 1">
+
+        <img src="/images/image4.jpg" alt="Jardín 2">
+
+        <img src="/images/image3.jpg" alt="Jardín 3">
+
+        <img src="/images/image6.png" alt="Jardín 4">
+
+        <img src="/images/image8.jpg" alt="Jardín 5">
+
+        <img src="/images/image9.jpg" alt="Jardín 6">
+
+    </div>
+    </section>
+    <section id="contacto" class="contact">
+
+    <h2>Solicitar Presupuesto</h2>
+
+    <form>
+
+        <input
+            type="text"
+            placeholder="Nombre completo"
+            [(ngModel)]="nombre"
+            name="nombre">
+
+        <input
+            type="text"
+            placeholder="Teléfono"
+            [(ngModel)]="telefono"
+            name="telefono">
+
+        <input
+            type="email"
+            placeholder="Correo electrónico"
+            [(ngModel)]="email"
+            name="email">
+
+        <select
+            [(ngModel)]="servicio"
+            name="servicio">
+
+            <option value="Mantenimiento de jardines">
+                Mantenimiento de jardines
+            </option>
+
+            <option value="Poda de árboles">
+                Poda de árboles
+            </option>
+
+            <option value="Césped natural">
+                Césped natural
+            </option>
+
+            <option value="Césped artificial">
+                Césped artificial
+            </option>
+
+            <option value="Sistema de riego">
+                Sistema de riego
+            </option>
+
+            <option value="Limpieza de parcelas">
+                Limpieza de parcelas
+            </option>
+
+        </select>
+
+        <input
+            type="date"
+            [(ngModel)]="fecha"
+            name="fecha">
+
+        <textarea
+            rows="5"
+            placeholder="Escriba su mensaje..."
+            [(ngModel)]="mensaje"
+            name="mensaje">
+        </textarea>
+
+        <button
+            type="button"
+            (click)="enviarWhatsapp()">
+            Enviar por WhatsApp
+        </button>
+
+    </form>
+
+</section>
+<section class="location">
+
+  <h2>¿Dónde Trabajamos?</h2>
+
+  <p>Palencia y alrededores</p>
+
+  <div class="contact-info">
+
+    <div class="info-card">
+      <h3>📞 Teléfono</h3>
+      <p>+34 641 470 876</p>
+    </div>
+
+    <div class="info-card">
+      <h3>📧 Email</h3>
+      <p>rbihi95@icloud.com</p>
+    </div>
+
+    <div class="info-card">
+      <h3>📍 Ubicación</h3>
+      <p>Palencia - España</p>
+    </div>
+
+  </div>
+
+  <iframe
+    src="https://www.google.com/maps?q=Palencia,Spain&output=embed"
+    loading="lazy">
+  </iframe>
+
+</section>
+
+
+<a
+  class="whatsapp-float"
+  href="https://wa.me/34641470876"
+  target="_blank">
+
+  💬
+
+</a>
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <h2>🌿 Rbihi Jardinería</h2>
+
+        <p>
+            Especialistas en mantenimiento, poda, césped, riego y diseño de jardines.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#inicio">Inicio</a>
+
+            <a href="#servicios">Servicios</a>
+
+            <a href="#galeria">Galería</a>
+
+            <a href="#contacto">Contacto</a>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <p>📞 +34 641 470 876</p>
+
+            <p>📧 rbihi95@icloud.com</p>
+
+            <p>📍 Palencia - España</p>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Rbihi Jardinería. Todos los derechos reservados.
+        </p>
+
+    </div>
+
+</footer>
