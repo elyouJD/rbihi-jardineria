@@ -10,7 +10,7 @@ import { NgClass } from '@angular/common';
   styleUrl: './home.scss',
 })
 export class Home {
- menuOpen = false;
+  menuOpen = false;
   nombre = '';
   telefono = '';
   email = '';
@@ -19,7 +19,6 @@ export class Home {
   mensaje = '';
 
   enviarWhatsapp() {
-
     const texto = `
 🌿 Solicitud de Presupuesto
 
@@ -37,11 +36,18 @@ export class Home {
 ${this.mensaje}
 `;
 
-    window.open(
-      `https://wa.me/34641470876?text=${encodeURIComponent(texto)}`,
-      '_blank'
-    );
-
+    window.open(`https://wa.me/34641470876?text=${encodeURIComponent(texto)}`, '_blank');
   }
+  scrollTo(id: string) {
+    this.menuOpen = false;
 
+    const element = document.getElementById(id);
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  }
 }
